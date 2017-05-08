@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfHostOwinApp", "SelfHost
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KatanaWebHost", "KatanaWebHost\KatanaWebHost.csproj", "{D82D9B30-2A5A-42A5-A671-63282C90BAA6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OwinMiddlewareTest", "OwinMiddlewareTest\OwinMiddlewareTest.csproj", "{8D642B58-72D9-4F20-9D5E-80D6BB855560}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D82D9B30-2A5A-42A5-A671-63282C90BAA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D82D9B30-2A5A-42A5-A671-63282C90BAA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D82D9B30-2A5A-42A5-A671-63282C90BAA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D642B58-72D9-4F20-9D5E-80D6BB855560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D642B58-72D9-4F20-9D5E-80D6BB855560}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D642B58-72D9-4F20-9D5E-80D6BB855560}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D642B58-72D9-4F20-9D5E-80D6BB855560}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
