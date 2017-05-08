@@ -10,12 +10,12 @@ namespace SelfHostOwinApp
     public class Startup1
     {
         public void Configuration(IAppBuilder app)
-        {    
+        {
             // New code: Add the error page middleware to the pipeline. 
             app.UseErrorPage();
 
             app.Run(context =>
-            {  
+            {
                 // New code: Throw an exception for this URI path.
                 if (context.Request.Path.Value == "/fail")
                 {
