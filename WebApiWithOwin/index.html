@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Web Api Demo</title>
+
+    <script src="Scripts/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+    <h2>
+        Web Api Demo
+    </h2>
+
+    <table>
+        <thead>
+            <tr>
+                <td>
+                    Name
+                </td>
+                <td>
+                    Description
+                </td>
+            </tr>
+        </thead>
+        <tbody id="animalContent"></tbody>
+    </table>
+
+    <script>
+
+        $(function () {
+            $.get('api/animal', function (data) {
+                var result = '';
+                $.each(data, function (index, value) {
+                    result += '<tr>';
+                    result += '<td>';
+                    result += value.Name;
+                    result += '</td>';
+                    result += '<td>';
+                    result += value.Description;
+                    result += '</td>';
+                    result += '</tr>';
+                });
+                $('#animalContent').html(result);
+            });
+        });
+
+    </script>
+</body>
+</html>
